@@ -42,16 +42,31 @@ storycast/
 
 ## 🚀 Getting Started
 
-No build tools required — open directly in a browser.
+### 1. Clone the repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/Frank00067/storycast.git
-cd storycast
+```
 
-# Open in browser
+### 2. Open the project
+
+```bash
+cd storycast
+```
+
+### 3. Run in browser
+
+**On Windows:**
+```bash
 start chrome index.html
 ```
+
+**On Mac:**
+```bash
+open index.html
+```
+
+**Or simply:** double-click `index.html` in your file explorer — it opens directly in your default browser. No server or install needed.
 
 ---
 
