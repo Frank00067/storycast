@@ -68,19 +68,7 @@ open index.html
 
 **Or simply:** double-click `index.html` in your file explorer — it opens directly in your default browser. No server or install needed.
 
----
 
-## 🌐 Live Site
-
-Hosted via GitHub Pages:
-
-👉 **https://frank00067.github.io/storycast/**
-
-To enable GitHub Pages:
-1. Go to your repository **Settings**
-2. Click **Pages** in the left sidebar
-3. Under Branch, select **main** → **/ (root)** → click **Save**
-4. Wait ~1 minute — your site will be live
 
 To compile Sass after editing `.scss` files:
 
