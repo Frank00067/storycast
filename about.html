@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About StoryCast — meet the team behind the podcast microsite." />
+  <title>About — StoryCast</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="site-wrapper">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="index.html" aria-label="StoryCast home">🎙 StoryCast</a>
+
+        <button
+          class="nav__toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >☰</button>
+
+        <ul class="nav__list" id="primary-nav" role="list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="episode.html">Episodes</a></li>
+          <li><a class="nav__link nav__link--active" href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="page-hero" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="hero__eyebrow">Our story</p>
+        <h1 class="hero__title" id="about-heading">We believe in the power&nbsp;of audio</h1>
+        <p class="hero__subtitle">
+          StoryCast started in 2022 as a one-person passion project. Today it's a
+          small collective of writers, sound designers, and editors — united by
+          a love of storytelling.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="page-section" aria-labelledby="mission-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Why we exist</p>
+          <h2 class="section-header__title" id="mission-heading">Our Mission</h2>
+        </header>
+        <p style="max-width:65ch;color:var(--c-text-muted, #a0a0b0);line-height:1.8;">
+          We exist to give independent audio storytellers a platform with no algorithmic
+          gatekeeping. Every episode is curated by hand. Every story is given the space
+          it needs to breathe. We are listener-supported and will never run ads.
+        </p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="page-section page-section--alt" aria-labelledby="team-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">The people</p>
+          <h2 class="section-header__title" id="team-heading">Meet the Team</h2>
+        </header>
+
+        <ul class="team-grid" role="list">
+          <li>
+            <article class="team-card">
+              <figure class="team-card__avatar">
+                <img
+                  src="https://i.pravatar.cc/80?u=alex"
+                  alt="Alex Rivera smiling, wearing headphones"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="team-card__name">Alex Rivera</h3>
+              <p class="team-card__role">Founder & Lead Producer</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <figure class="team-card__avatar">
+                <img
+                  src="https://i.pravatar.cc/80?u=sam"
+                  alt="Sam Chen at a mixing desk in a recording studio"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="team-card__name">Sam Chen</h3>
+              <p class="team-card__role">Sound Designer</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <figure class="team-card__avatar">
+                <img
+                  src="https://i.pravatar.cc/80?u=priya"
+                  alt="Priya Nair holding a microphone"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="team-card__name">Priya Nair</h3>
+              <p class="team-card__role">Head Writer</p>
+            </article>
+          </li>
+          <li>
+            <article class="team-card">
+              <figure class="team-card__avatar">
+                <img
+                  src="https://i.pravatar.cc/80?u=jordan"
+                  alt="Jordan Lee at a laptop in a coffee shop"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="team-card__name">Jordan Lee</h3>
+              <p class="team-card__role">Web & Accessibility Lead</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 StoryCast. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__links" role="list">
+          <li><a class="footer__link" href="index.html">Home</a></li>
+          <li><a class="footer__link" href="episode.html">Episodes</a></li>
+          <li><a class="footer__link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      navList.classList.toggle('nav__list--open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StoryCast — A podcast microsite featuring original audio stories and video episodes." />
+  <title>StoryCast — Home</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="site-wrapper">
+
+  <!-- Skip navigation for keyboard/screen reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ======================================================
+       HEADER / NAV
+  ====================================================== -->
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="index.html" aria-label="StoryCast home">
+          🎙 StoryCast
+        </a>
+
+        <button
+          class="nav__toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >☰</button>
+
+        <ul class="nav__list" id="primary-nav" role="list">
+          <li><a class="nav__link nav__link--active" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="episode.html">Episodes</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+  ====================================================== -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="page-hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="hero__eyebrow">New episodes every week</p>
+        <h1 class="hero__title" id="hero-heading">Stories Worth&nbsp;Hearing</h1>
+        <p class="hero__subtitle">
+          StoryCast brings you original audio dramas, documentary podcasts,
+          and video essays from independent creators around the world.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="episode.html">Listen Now</a>
+          <a class="btn btn--outline" href="about.html">About the Show</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Episodes -->
+    <section class="page-section" aria-labelledby="episodes-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Latest Releases</p>
+          <h2 class="section-header__title" id="episodes-heading">Featured Episodes</h2>
+          <p class="section-header__subtitle">Hand-picked stories from our editors this week.</p>
+        </header>
+
+        <ul class="episode-grid" role="list" aria-label="Featured episodes">
+
+          <li>
+            <article class="episode-card">
+              <figure class="episode-card__thumbnail">
+                <img
+                  src="https://picsum.photos/seed/radio/400/225"
+                  alt="Dark forest at night with a single lantern"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="episode-card__body">
+                <p class="episode-card__tag"><span class="badge">Audio Drama</span></p>
+                <h3 class="episode-card__title">
+                  <a href="episode.html">The Last Signal — Episode 1</a>
+                </h3>
+                <p class="episode-card__desc">
+                  A lone radio operator picks up a transmission that shouldn't exist.
+                </p>
+                <dl class="episode-card__meta">
+                  <div><dt class="sr-only">Duration</dt><dd>42 min</dd></div>
+                  <div><dt class="sr-only">Published</dt><dd>June 12, 2025</dd></div>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="episode-card">
+              <figure class="episode-card__thumbnail">
+                <img
+                  src="https://picsum.photos/seed/city/400/225"
+                  alt="Aerial view of a sprawling city at dusk"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="episode-card__body">
+                <p class="episode-card__tag"><span class="badge">Documentary</span></p>
+                <h3 class="episode-card__title">
+                  <a href="episode.html">City of Echoes</a>
+                </h3>
+                <p class="episode-card__desc">
+                  Three urban explorers uncover the forgotten histories beneath modern cities.
+                </p>
+                <dl class="episode-card__meta">
+                  <div><dt class="sr-only">Duration</dt><dd>58 min</dd></div>
+                  <div><dt class="sr-only">Published</dt><dd>June 5, 2025</dd></div>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="episode-card">
+              <figure class="episode-card__thumbnail">
+                <img
+                  src="https://picsum.photos/seed/writer/400/225"
+                  alt="Close-up of hands typing on an old typewriter"
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="episode-card__body">
+                <p class="episode-card__tag"><span class="badge">Video Essay</span></p>
+                <h3 class="episode-card__title">
+                  <a href="episode.html">Writing in the Dark</a>
+                </h3>
+                <p class="episode-card__desc">
+                  What happens when authors lose faith in their own stories?
+                </p>
+                <dl class="episode-card__meta">
+                  <div><dt class="sr-only">Duration</dt><dd>28 min</dd></div>
+                  <div><dt class="sr-only">Published</dt><dd>May 28, 2025</dd></div>
+                </dl>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- About teaser -->
+    <section class="page-section page-section--alt" aria-labelledby="about-teaser-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Who we are</p>
+          <h2 class="section-header__title" id="about-teaser-heading">Independent Storytelling</h2>
+          <p class="section-header__subtitle">
+            StoryCast is a listener-supported platform run by a small team of writers,
+            sound designers, and editors passionate about audio-first narrative.
+          </p>
+        </header>
+        <a class="btn btn--primary" href="about.html">Meet the Team</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 StoryCast. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__links" role="list">
+          <li><a class="footer__link" href="index.html">Home</a></li>
+          <li><a class="footer__link" href="episode.html">Episodes</a></li>
+          <li><a class="footer__link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      navList.classList.toggle('nav__list--open');
+    });
+  </script>
+
+</body>
+</html>

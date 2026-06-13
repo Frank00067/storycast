@@ -1,0 +1,69 @@
+// ============================================================
+// _responsive.scss — Media queries & container queries
+// ============================================================
+
+@use 'tokens' as *;
+
+// ----------------------------------------------------------
+// Nav: collapse on mobile
+// ----------------------------------------------------------
+@media (max-width: #{$bp-md}) {
+  .nav {
+    &__list {
+      display: none;
+      flex-direction: column;
+      gap: $spacing-sm;
+      padding-top: $spacing-md;
+
+      &--open { display: flex; }
+    }
+
+    &__toggle { display: block; }
+
+    &__inner { flex-wrap: wrap; }
+  }
+}
+
+// ----------------------------------------------------------
+// Hero: reduce padding on mobile
+// ----------------------------------------------------------
+@media (max-width: #{$bp-sm}) {
+  .page-hero { padding: $spacing-lg $spacing-md; }
+
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// ----------------------------------------------------------
+// Episode page: sidebar layout on large screens
+// ----------------------------------------------------------
+@media (min-width: #{$bp-lg}) {
+  .episode-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: $spacing-xl;
+    align-items: start;
+  }
+}
+
+// ----------------------------------------------------------
+// Footer: stack on small screens
+// ----------------------------------------------------------
+@media (max-width: #{$bp-sm}) {
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+// ----------------------------------------------------------
+// Container query: episode-card already defined in _components
+// Additional: media-player compact mode
+// ----------------------------------------------------------
+@container card (min-width: 400px) {
+  .episode-card__body {
+    padding: 1.5rem;
+  }
+}
