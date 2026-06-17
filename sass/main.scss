@@ -1,0 +1,27 @@
+// ============================================================
+// main.scss — Entry point: cascade layers + partials
+// ============================================================
+
+@layer reset, tokens, layout, components, responsive;
+
+@layer reset {
+  @use 'reset';
+}
+
+@layer tokens {
+  @use 'colors' as *;
+  @use 'typography' as *;
+  @use 'spacing' as *;
+}
+
+@layer layout {
+  @use 'layout';
+}
+
+@layer components {
+  @use 'components';
+}
+
+@layer responsive {
+  @use 'responsive';
+}

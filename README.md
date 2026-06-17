@@ -19,11 +19,15 @@ storycast/
 ├── index.html              ← Home page
 ├── episode.html            ← Episode player page
 ├── about.html              ← About & team page
+├── story/
+│   └── the-last-signal.html ← Story detail page
 ├── css/
 │   └── main.css            ← Compiled CSS (cascade layers)
-├── scss/
+├── sass/
 │   ├── main.scss           ← Entry point with @layer
-│   ├── _tokens.scss        ← Design tokens & variables
+│   ├── _colors.scss        ← Color tokens
+│   ├── _typography.scss    ← Typography tokens
+│   ├── _spacing.scss       ← Spacing & breakpoint tokens
 │   ├── _reset.scss         ← CSS reset + .sr-only utility
 │   ├── _layout.scss        ← Page-level layout primitives
 │   ├── _components.scss    ← BEM components
@@ -77,10 +81,10 @@ To compile Sass after editing `.scss` files:
 npm install -g sass
 
 # Compile
-sass scss/main.scss css/main.css
+sass sass/main.scss css/main.css
 
 # Watch for changes
-sass --watch scss/main.scss css/main.css
+sass --watch sass/main.scss css/main.css
 ```
 
 ---
@@ -95,8 +99,8 @@ sass --watch scss/main.scss css/main.css
 - `<dl>` for episode metadata (duration, published date)
 
 ### 2. Sass & CSS Architecture
-- 5 Sass partials with clear single responsibilities
-- Design tokens centralised in `_tokens.scss`
+- 7 Sass partials with clear single responsibilities
+- Color tokens in `_colors.scss`, typography in `_typography.scss`, spacing in `_spacing.scss`
 - BEM naming on every component (`.episode-card__title`, `.nav__link--active`, etc.)
 - `@layer` cascade layers: `reset → tokens → layout → components → responsive`
 - Modern CSS: `clamp()`, `min()`, `aspect-ratio`, `container-type`

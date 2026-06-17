@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Last Signal — Episode 1. A lone radio operator picks up a transmission that shouldn't exist." />
+  <title>The Last Signal, Ep. 1 — StoryCast</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="site-wrapper">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="../index.html" aria-label="StoryCast home">🎙 StoryCast</a>
+
+        <button
+          class="nav__toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >☰</button>
+
+        <ul class="nav__list" id="primary-nav" role="list">
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link nav__link--active" href="the-last-signal.html" aria-current="page">Episodes</a></li>
+          <li><a class="nav__link" href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="episode-heading">
+      <div class="container">
+        <p class="hero__eyebrow"><span class="badge">Audio Drama</span></p>
+        <h1 class="hero__title" id="episode-heading">The Last Signal</h1>
+        <p class="hero__subtitle">Season 1, Episode 1 · 42 min · June 12, 2025</p>
+      </div>
+    </section>
+
+    <section class="page-section" aria-label="Episode player and details">
+      <div class="container episode-layout">
+
+        <!-- Main: video + audio player -->
+        <article class="media-player" aria-labelledby="player-title">
+
+          <!-- Video with captions -->
+          <figure>
+            <video
+              class="media-player__video"
+              controls
+              preload="metadata"
+              aria-label="The Last Signal Episode 1 video"
+              poster="https://picsum.photos/seed/ep1/800/450"
+            >
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+              <track
+                kind="captions"
+                src="captions/episode1.vtt"
+                srclang="en"
+                label="English captions"
+                default
+              />
+              <track
+                kind="descriptions"
+                src="captions/episode1-desc.vtt"
+                srclang="en"
+                label="Audio descriptions"
+              />
+              <p>
+                Your browser doesn't support HTML video.
+                <a href="media/episode1.mp4">Download the episode</a>.
+              </p>
+            </video>
+            <figcaption class="sr-only">
+              Video player for The Last Signal, Episode 1. Captions are available.
+            </figcaption>
+          </figure>
+
+          <!-- Audio-only version -->
+          <div class="media-player__body">
+            <h2 class="media-player__title" id="player-title">Listen: Audio Version</h2>
+            <figure>
+              <audio
+                class="media-player__audio"
+                controls
+                aria-label="Audio version of The Last Signal, Episode 1"
+                aria-describedby="audio-transcript-note"
+              >
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                <track
+                  kind="captions"
+                  src="captions/episode1.vtt"
+                  srclang="en"
+                  label="English captions"
+                  default
+                />
+                <p>Your browser doesn't support HTML audio. <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Download the audio</a>.</p>
+              </audio>
+              <figcaption id="audio-transcript-note" class="sr-only">
+                Full transcript available below. Captions sourced from episode1.vtt.
+              </figcaption>
+            </figure>
+
+            <p class="media-player__description">
+              A lone radio operator stationed at a remote Arctic post picks up a
+              transmission on a frequency that has been silent for thirty years.
+              What follows is a six-part audio drama about isolation, memory,
+              and the stories we tell ourselves to survive.
+            </p>
+
+            <!-- Full transcript for accessibility -->
+            <section aria-labelledby="transcript-heading">
+              <h3 class="media-player__transcript-title" id="transcript-heading">
+                Full Transcript
+              </h3>
+              <div class="media-player__transcript" tabindex="0" role="region" aria-label="Episode transcript">
+                <p><strong>[AMBIENT: Wind howling, radio static]</strong></p>
+                <p>
+                  <strong>NARRATOR:</strong> The Arctic station had been running on autopilot
+                  for eleven months when Marcus first heard it — a voice, low and deliberate,
+                  threading through the static like smoke through a keyhole.
+                </p>
+                <p><strong>[STATIC INCREASES, THEN DROPS]</strong></p>
+                <p>
+                  <strong>VOICE (distorted):</strong> ...if anyone receives this, the coordinates
+                  are seventy-three north, forty-one west. Do not come alone.
+                </p>
+                <p>
+                  <strong>MARCUS:</strong> Station log, day three-forty-two. I've been at this post
+                  long enough to know the difference between interference and intention.
+                  That was intention.
+                </p>
+                <p><em>[Transcript continues — this excerpt covers 0:00–2:30]</em></p>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- Sidebar: episode list -->
+        <aside aria-labelledby="more-episodes-heading">
+          <h2 id="more-episodes-heading" class="section-header__title" style="margin-bottom:1rem;">More Episodes</h2>
+          <ul role="list" style="display:flex;flex-direction:column;gap:1rem;">
+            <li>
+              <article class="episode-card">
+                <div class="episode-card__body">
+                  <p class="episode-card__tag"><span class="badge">Documentary</span></p>
+                  <h3 class="episode-card__title"><a href="episode.html">City of Echoes</a></h3>
+                  <dl class="episode-card__meta">
+                    <div><dt class="sr-only">Duration</dt><dd>58 min</dd></div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="episode-card">
+                <div class="episode-card__body">
+                  <p class="episode-card__tag"><span class="badge">Video Essay</span></p>
+                  <h3 class="episode-card__title"><a href="episode.html">Writing in the Dark</a></h3>
+                  <dl class="episode-card__meta">
+                    <div><dt class="sr-only">Duration</dt><dd>28 min</dd></div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 StoryCast. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__links" role="list">
+              <li><a class="footer__link" href="../index.html">Home</a></li>
+          <li><a class="footer__link" href="the-last-signal.html">Episodes</a></li>
+          <li><a class="footer__link" href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      navList.classList.toggle('nav__list--open');
+    });
+  </script>
+
+</body>
+</html>
