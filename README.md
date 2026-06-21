@@ -62,7 +62,7 @@ cd storycast
 
 **On Windows:**
 ```bash
-start chrome index.html
+start index.html
 ```
 
 **On Mac:**
