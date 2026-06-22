@@ -156,5 +156,6 @@ sass --watch sass/main.scss css/main.css
 | Focus indicators | `outline` on `:focus-visible` across all elements |
 
 ---
+## Documentation Features: https://docs.google.com/document/d/1DGemBbFcsX8WsSPmzKe9TUHdmiuQfV-0GRERMQ5dN18/edit?tab=t.0 
 
 ## © 2026 StoryCast. All rights reserved.
